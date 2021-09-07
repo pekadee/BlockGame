@@ -7,8 +7,11 @@ import android.os.Bundle
 import android.view.DragEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TableLayout
 import android.widget.Toast
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
 
         dragView1.setOnLongClickListener {
-            val clipText = "ClipText"
+            val clipText = "Ustawiono blok 1"
             val item = ClipData.Item(clipText)
             val mimeTypes = arrayOf(ClipDescription.MIMETYPE_TEXT_PLAIN)
             val data = ClipData(clipText, mimeTypes, item)
@@ -52,8 +55,8 @@ class MainActivity : AppCompatActivity() {
             it.visibility = View.INVISIBLE
             true
         }
-         dragView2.setOnLongClickListener {
-            val ClipText = "ClipText"
+        dragView2.setOnLongClickListener {
+            val ClipText = "Ustawiono blok 2"
             val item = ClipData.Item(ClipText)
             val mimeTypes = arrayOf(ClipDescription.MIMETYPE_TEXT_PLAIN)
             val Data = ClipData(ClipText, mimeTypes, item)
@@ -65,7 +68,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
         dragView3.setOnLongClickListener {
-            val ClipText = "ClipText"
+            val ClipText = "Ustawiono blok 3"
             val item = ClipData.Item(ClipText)
             val mimeTypes = arrayOf(ClipDescription.MIMETYPE_TEXT_PLAIN)
             val Data = ClipData(ClipText, mimeTypes, item)
